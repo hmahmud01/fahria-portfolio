@@ -30,12 +30,32 @@ header {
     background-color: #faf5ef !important;
 }
 
+.bg-custom2 {
+    background-color: #fffbf2 !important;
+}
+
+.bg-progress {
+    background-color: #8d8d8d;
+}
 .text-title {
     font-family: 'Lora', serif;
 }
 
 .text-design {
     color: #8d8d8d;
+}
+
+.project-border {
+    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
+    /*
+      Above is shorthand for:
+      border-top-left-radius: 255px 15px;
+      border-top-right-radius: 15px 225px;
+      border-bottom-right-radius: 225px 15px;
+      border-bottom-left-radius:15px 255px;
+      */
+    border:solid 2px #41403E;
 }
 
 .landing-text {
@@ -256,7 +276,7 @@ nav .fa-bars:hover {
 
 
 .idea-background {
-    background-image: url(/asset/img/back-4.jpg);
+    background-image: url(/asset/cropped/77.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -269,18 +289,59 @@ nav .fa-bars:hover {
     /* Black background with opacity */
 }
 
-.join-background {
-    background-image: url(/asset/img/back-2.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+#knowledge {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Black background with opacity */
+    background-color: #faf5ef;
+}
+
+.knowledge-img1 {
+    position: absolute;
+    width: 450px;
+    bottom: 0px;
+    left: 65px;
+}
+
+.knowledge-img2 {
+    position: absolute;
+    width: 370px;
+    top: 0px;
+    right: 65px;
+}
+
+.knowledge-text {
+    position: absolute;
+    width: 47%;
+    left: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.span-n1 {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.span-n2 {
+    font-family: 'Rubik Scribble'
+}
+
+.span-n3 {
+    font-family: 'Lemonada', cursive;
+}
+
+.span-n4 {
+    font-family: 'BhuTuka Expanded One', serif;
+}
+
+.span-n5 {
+    font-family: 'Lora', serif;
+}
+
+.span-n6 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.span-n7 {
+    font-family: 'Inter', sans-serif;
 }
 
 
