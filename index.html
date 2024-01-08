@@ -549,8 +549,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
         integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/asset/scripts.js"></script>
-    <script src="/asset/carousel.js"></script>
 
     <script>
         let target = 0;
@@ -570,7 +568,7 @@
 
         function updateActiveSliderNumber(markerMove, markerMaxMove){
             const partWidth = markerMaxMove / 10;
-            let currentPart = Math.round((markerMove -70) / partWidth) + 1;
+            let currentPart = Math.round((markerMove - 70) / partWidth) + 1;
             currentPart = Math.min(10, currentPart);
             activeSlide.textContent = `${currentPart}/10`;
         }
@@ -585,7 +583,7 @@
             let moveRatio = current / maxScroll;
 
             let markerMaxMove = window.innerWidth - makerWrapper.offsetWidth - 170;
-            let markerMove = 70 * moveRatio * markerMaxMove;
+            let markerMove = 70 + moveRatio * markerMaxMove;
 
             gsap.set(".marker-wrapper", {
                 x: markerMove,
@@ -605,9 +603,14 @@
 
             target = Math.max(0, target);
             target = Math.min(maxScroll, target);
-        })
 
+            console.log("target ", target)
+        })
+        update();
     </script>
+
+    <script src="/asset/scripts.js"></script>
+    <script src="/asset/carousel.js"></script>
 </body>
 
 </html>
